@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout 
+  title="Upcoming Events | The Lumber River"
+  description="Find upcoming events, river cleanups, festivals, and community gatherings related to the Lumber River."
+>
+  <Hero 
+    title="Upcoming Events"
+    subtitle="River cleanups, festivals, and community gatherings"
+  />
+
+  <section class="container mx-auto px-4 py-16">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-lg text-gray-700">
+          Join us for events celebrating and protecting the Lumber River. From volunteer 
+          river cleanups to local festivals, there's always something happening on and around the river.
+        </p>
+      </div>
+
+      <!-- Placeholder for upcoming events -->
+      <div class="space-y-8">
+        <Card title="Events Coming Soon">
+          <p class="text-gray-700 mt-4">
+            We're working on compiling a calendar of upcoming events. Check back soon for 
+            information about river cleanups, paddling events, nature walks, and local festivals.
+          </p>
+        </Card>
+
+        <div class="bg-cypress-green text-white rounded-lg p-8">
+          <h3 class="text-2xl font-heading font-bold mb-4">Stay Informed</h3>
+          <p class="mb-4">
+            Want to be notified about upcoming events on the Lumber River? Get in touch and 
+            we'll keep you updated about volunteer opportunities, festivals, and community gatherings.
+          </p>
+          <a 
+            href="/contact" 
+            class="inline-block bg-sandbar-tan text-river-blue px-6 py-3 rounded-lg font-semibold hover:bg-white transition-colors"
+          >
+            Contact Us
+          </a>
+        </div>
+      </div>
+
+      <!-- Future events structure -->
+      <div class="mt-16">
+        <h2 class="text-3xl font-heading font-bold mb-8 text-river-blue text-center">
+          Typical Annual Events
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-fog-gray rounded-lg p-6">
+            <h4 class="text-xl font-bold mb-2 text-river-blue">Spring River Cleanup</h4>
+            <p class="text-sm text-gray-600 mb-2">Usually held in April</p>
+            <p class="text-gray-700">
+              Community volunteers gather to clean up trash and debris along the river, 
+              helping protect wildlife habitat and water quality.
+            </p>
+          </div>
+
+          <div class="bg-fog-gray rounded-lg p-6">
+            <h4 class="text-xl font-bold mb-2 text-river-blue">Lumber River Festival</h4>
+            <p class="text-sm text-gray-600 mb-2">Usually held in early Fall</p>
+            <p class="text-gray-700">
+              Annual celebration featuring paddling competitions, nature walks, 
+              local artisans, and educational programs about the river's ecology.
+            </p>
+          </div>
+
+          <div class="bg-fog-gray rounded-lg p-6">
+            <h4 class="text-xl font-bold mb-2 text-river-blue">Guided Nature Walks</h4>
+            <p class="text-sm text-gray-600 mb-2">Seasonal offerings</p>
+            <p class="text-gray-700">
+              Join park naturalists for guided walks exploring the river's unique 
+              ecosystems, wildlife, and plant communities.
+            </p>
+          </div>
+
+          <div class="bg-fog-gray rounded-lg p-6">
+            <h4 class="text-xl font-bold mb-2 text-river-blue">Bird Watching Events</h4>
+            <p class="text-sm text-gray-600 mb-2">Throughout the year</p>
+            <p class="text-gray-700">
+              Organized bird watching trips to observe resident and migrating species 
+              along the river corridor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

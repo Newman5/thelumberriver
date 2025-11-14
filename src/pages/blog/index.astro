@@ -1,0 +1,47 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/Hero.astro';
+import Card from '../../components/Card.astro';
+---
+
+<Layout 
+  title="Blog | The Lumber River"
+  description="Read about the Lumber River's wildlife, ecology, paddling adventures, and seasonal updates."
+>
+  <Hero 
+    title="River Stories"
+    subtitle="Wildlife, ecology, and adventures on the Lumber River"
+  />
+
+  <section class="container mx-auto px-4 py-16">
+    <div class="text-center mb-12">
+      <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+        Explore stories about the river's wildlife, seasonal changes, paddling adventures, 
+        and the natural wonders that make the Lumber River special.
+      </p>
+    </div>
+
+    <!-- Placeholder for blog posts -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <Card 
+        title="Coming Soon: River Wildlife"
+        description="Stay tuned for stories about the diverse wildlife that calls the Lumber River home."
+      />
+      <Card 
+        title="Coming Soon: Paddling Adventures"
+        description="Practical guides and personal stories from paddlers exploring the river."
+      />
+      <Card 
+        title="Coming Soon: Seasonal Updates"
+        description="Discover how the river changes with the seasons and what to look for year-round."
+      />
+    </div>
+
+    <div class="mt-16 text-center">
+      <p class="text-gray-600 italic">
+        Blog posts will be added soon. Check back for wildlife profiles, paddling guides, 
+        and seasonal observations.
+      </p>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,151 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<Layout 
+  title="Paddling & Fishing Guide | The Lumber River"
+  description="Your guide to paddling routes, fishing tips, safety information, and access points on the Lumber River."
+>
+  <Hero 
+    title="River Guide"
+    subtitle="Paddling, fishing, and exploring the Lumber River"
+  />
+
+  <article class="container mx-auto px-4 py-16 max-w-6xl">
+    <div class="prose prose-lg max-w-none">
+      <section class="mb-12">
+        <h2 class="text-3xl font-heading font-bold mb-6 text-river-blue">Paddling the Lumber River</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          The Lumber River offers some of the finest blackwater paddling in North Carolina. 
+          Its gentle current, scenic beauty, and abundant wildlife make it ideal for paddlers 
+          of all skill levels.
+        </p>
+
+        <div class="bg-fog-gray rounded-lg p-8 mb-8">
+          <h3 class="text-2xl font-heading font-bold mb-4 text-river-blue">Popular Paddling Routes</h3>
+          <ul class="space-y-4">
+            <li>
+              <strong class="text-river-blue">Princess Ann to Fair Bluff</strong> - 
+              A scenic 12-mile journey through pristine cypress-tupelo swamp
+            </li>
+            <li>
+              <strong class="text-river-blue">Fair Bluff to Boardman</strong> - 
+              15 miles of winding river with excellent wildlife viewing
+            </li>
+            <li>
+              <strong class="text-river-blue">Boardman to Lumberton</strong> - 
+              A popular 14-mile section with easy access points
+            </li>
+          </ul>
+        </div>
+
+        <h3 class="text-2xl font-heading font-bold mb-4 text-river-blue">Paddling Tips</h3>
+        <ul class="space-y-2 text-gray-700 mb-8">
+          <li>• Plan for 2-3 hours per 5 miles, accounting for current and stops</li>
+          <li>• Bring insect repellent, especially in warmer months</li>
+          <li>• Wear sunscreen and a hat for sun protection</li>
+          <li>• Pack plenty of water and snacks</li>
+          <li>• Consider a dry bag for valuables and electronics</li>
+          <li>• Check water levels before your trip - higher is generally better</li>
+        </ul>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-3xl font-heading font-bold mb-6 text-river-blue">Fishing</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          The Lumber River is home to over 100 species of fish, making it a diverse and 
+          rewarding destination for anglers.
+        </p>
+
+        <div class="bg-fog-gray rounded-lg p-8 mb-8">
+          <h3 class="text-2xl font-heading font-bold mb-4 text-river-blue">Common Species</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li>• Largemouth Bass</li>
+            <li>• Redbreast Sunfish</li>
+            <li>• Chain Pickerel</li>
+            <li>• Catfish (Channel and Flathead)</li>
+            <li>• Bowfin</li>
+            <li>• Yellow Perch</li>
+          </ul>
+        </div>
+
+        <p class="text-gray-700 leading-relaxed mb-4">
+          <strong>License Required:</strong> A valid North Carolina fishing license is required 
+          for anyone 16 years or older. Licenses can be purchased online through the NC Wildlife 
+          Resources Commission.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-3xl font-heading font-bold mb-6 text-river-blue">Safety & Preparedness</h2>
+        <div class="bg-amber-50 border-l-4 border-amber-500 p-6 mb-6">
+          <h3 class="text-xl font-bold mb-2 text-amber-900">Important Safety Information</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li>• Always wear a properly fitted life jacket while on the water</li>
+            <li>• Tell someone your paddling plan and expected return time</li>
+            <li>• Be aware of weather conditions and river levels</li>
+            <li>• Carry a whistle or other signaling device</li>
+            <li>• Know basic first aid and carry a first aid kit</li>
+            <li>• Be cautious of submerged logs and debris</li>
+          </ul>
+        </div>
+
+        <h3 class="text-2xl font-heading font-bold mb-4 text-river-blue">Wildlife Awareness</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          The Lumber River is home to alligators, venomous snakes, and other wildlife. 
+          Observe animals from a safe distance and never approach or feed wildlife. 
+          Most wildlife will avoid humans if given space.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-3xl font-heading font-bold mb-6 text-river-blue">Access Points</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Lumber River State Park maintains several public access points along the river. 
+          Most sites offer parking, restrooms, and canoe/kayak launches.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-fog-gray rounded-lg p-6">
+            <h4 class="text-xl font-bold mb-2 text-river-blue">Princess Ann Access</h4>
+            <p class="text-sm text-gray-600 mb-2">Princess Ann Rd, Princess Ann, NC</p>
+            <p class="text-gray-700">Northern access point with parking and launch ramp.</p>
+          </div>
+
+          <div class="bg-fog-gray rounded-lg p-6">
+            <h4 class="text-xl font-bold mb-2 text-river-blue">Fair Bluff Access</h4>
+            <p class="text-sm text-gray-600 mb-2">River Rd, Fair Bluff, NC</p>
+            <p class="text-gray-700">Popular mid-river access with facilities.</p>
+          </div>
+
+          <div class="bg-fog-gray rounded-lg p-6">
+            <h4 class="text-xl font-bold mb-2 text-river-blue">Boardman Access</h4>
+            <p class="text-sm text-gray-600 mb-2">4487 River Rd, Boardman, NC</p>
+            <p class="text-gray-700">Central location with camping available.</p>
+          </div>
+
+          <div class="bg-fog-gray rounded-lg p-6">
+            <h4 class="text-xl font-bold mb-2 text-river-blue">Chalk Banks Access</h4>
+            <p class="text-sm text-gray-600 mb-2">Chalk Banks Rd, Orrum, NC</p>
+            <p class="text-gray-700">Southern access with scenic bluffs.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-cypress-green text-white rounded-lg p-8">
+        <h3 class="text-2xl font-heading font-bold mb-4">Plan Your Visit</h3>
+        <p class="mb-4">
+          For current river conditions, water levels, and park information, contact 
+          Lumber River State Park or visit the NC State Parks website.
+        </p>
+        <a 
+          href="/contact" 
+          class="inline-block bg-sandbar-tan text-river-blue px-6 py-2 rounded font-semibold hover:bg-white transition-colors"
+        >
+          Get More Information
+        </a>
+      </section>
+    </div>
+  </article>
+</Layout>
