@@ -1,0 +1,41 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-river-blue text-white mt-16">
+  <div class="container mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- About Section -->
+      <div>
+        <h3 class="text-xl font-heading font-bold mb-4">The Lumber River</h3>
+        <p class="text-sm text-gray-300">
+          Exploring the natural beauty, ecology, and wildlife of the Lumber River in Robeson County, North Carolina.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-lg font-heading font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/about" class="hover:text-sandbar-tan transition-colors">About</a></li>
+          <li><a href="/blog" class="hover:text-sandbar-tan transition-colors">Blog</a></li>
+          <li><a href="/guide" class="hover:text-sandbar-tan transition-colors">Guide</a></li>
+          <li><a href="/upcoming" class="hover:text-sandbar-tan transition-colors">Events</a></li>
+          <li><a href="/contact" class="hover:text-sandbar-tan transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h4 class="text-lg font-heading font-semibold mb-4">Legal</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/legal/privacy" class="hover:text-sandbar-tan transition-colors">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-600 mt-8 pt-6 text-center text-sm text-gray-300">
+      <p>&copy; {currentYear} The Lumber River. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout 
+  title="The Lumber River - Natural Beauty in Robeson County, NC"
+  description="Explore the Lumber River's natural beauty, ecology, and wildlife in Robeson County, North Carolina. A guide for paddlers, birders, hikers, and nature lovers."
+>
+  <Hero 
+    title="The Lumber River"
+    subtitle="Where blackwater meets wilderness in the heart of North Carolina"
+    height="large"
+  />
+
+  <section class="container mx-auto px-4 py-16">
+    <div class="max-w-4xl mx-auto text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-river-blue">
+        A Natural Treasure
+      </h2>
+      <p class="text-lg text-gray-700 leading-relaxed">
+        The Lumber River winds through Robeson County, North Carolina, offering a unique glimpse into 
+        one of the state's most pristine blackwater ecosystems. From ancient cypress trees to diverse 
+        wildlife, the river tells a story written in moss, water, and time.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <Card 
+        title="Explore"
+        description="Discover paddling routes, fishing spots, and access points along the river."
+        href="/guide"
+      />
+      <Card 
+        title="Learn"
+        description="Read about the river's ecology, wildlife, and natural history."
+        href="/blog"
+      />
+      <Card 
+        title="Connect"
+        description="Find upcoming events, river cleanups, and local festivals."
+        href="/upcoming"
+      />
+    </div>
+
+    <!-- Call to Action -->
+    <div class="bg-gradient-to-r from-cypress-green to-river-blue text-white rounded-lg p-8 md:p-12 text-center">
+      <h3 class="text-2xl md:text-3xl font-heading font-bold mb-4">
+        Stay Connected
+      </h3>
+      <p class="text-lg mb-6 max-w-2xl mx-auto">
+        Get updates about the Lumber River, new wildlife sightings, and paddling tips delivered to your inbox.
+      </p>
+      <a 
+        href="/contact" 
+        class="inline-block bg-sandbar-tan text-river-blue px-8 py-3 rounded-lg font-semibold hover:bg-white transition-colors"
+      >
+        Get in Touch
+      </a>
+    </div>
+  </section>
+</Layout>
